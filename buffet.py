@@ -24,9 +24,11 @@ ASSIGNMENT: 3B - The Buffet Calculator (Daily Specials)
 DATE: 09/02/26
 FILE: buffet.py
 """
+# assigning variables
 age = int(input("Please enter your age: "))
 day = input("Please enter the day of the week: ")
 drinks = int(input("Please enter how many drinks you will be getting: "))
+# setting prices to based on age
 if age < 1:
     price = 0.00
 elif age <= 12:
@@ -35,12 +37,12 @@ elif age <= 64:
     price = 16.95
 else:
     price = 12.95
-
+# setting drink prices
 if drinks < 1:
     drink_price = 0.00
 else:
     drink_price = float(drinks)
-
+# setting prices with specials
 match day.lower():
     case "tuesday":
         if age <= 12:
@@ -51,6 +53,6 @@ match day.lower():
         print("Sunday Special: Drinks are free!")
     case _:
         print("Standard buffet pricing in effect!")
-
+# total estimation
 price = price + drink_price
 print(f"Final Price: ${price:.2f}")
