@@ -12,7 +12,7 @@ ASSIGNMENT REQUIREMENTS
 [ ] 4. Upload to GitHub and paste the link below.
 -----------------------------------------------------------------------
 """
-
+#Making a loop
 are_we_there = False
 
 while are_we_there == False:
@@ -20,6 +20,6 @@ while are_we_there == False:
 
     if answer.strip().lower() == "yes":
         are_we_there = True
-
+#Counting backwards
 for bottles in range(99, 0, -1):
     print(f"{bottles} bottles of beer on the wall!")
