@@ -35,4 +35,4 @@ while len(seats) > 0:
     except ValueError:
         print("Please input a valid number")
 if len(seats) == 0:
-    print("\n Unavailable seats at this time!")
+    print(f"Unavailable seats at this time!")
