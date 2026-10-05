@@ -38,12 +38,31 @@ EMOJI_CIPHER = {
     "Y": "🪀",
     "Z": "🦓",
 }
-message = input("Enter secret message: ").upper()
 
-# TODO: Loop through each character
-for character in message:
-    try:
-        print(EMOJI_CIPHER[character])
-    # TODO: try to print the emoji, except if it's a space or symbol
-    except KeyError:
-        print(character)
+while True:
+    print("1. Enter English")
+    print("2. Enter Coded Word")
+    print("3. Quit")
+    choice = input("Please select an option: ")
+
+    if choice == "1":
+        message = input("Enter English Message: ").upper()
+        # TODO: Loop through each character
+        for character in message:
+            try:
+                print(EMOJI_CIPHER[character])
+            # TODO: try to print the emoji, except if it's a space or symbol
+            except KeyError:
+                print(character)
+    elif choice == "2":
+        message = input("Enter Coded Message: ").upper()
+        for character in message:
+            try:
+                for key, value in EMOJI_CIPHER.items():
+                    if character == value:
+                        print(key)
+            except KeyError:
+                print(character)
+    elif choice == "3":
+        print("Goodbye")
+        break
