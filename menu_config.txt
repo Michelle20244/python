@@ -1,0 +1,4 @@
+Flavors,Vanilla, Chocolate, Twist, Cake Batter, Marshmallow, Matcha
+Toppings,Oreos, Chocolate chips, Sprinkles, Gummy Bears, Strawberries, Cheesecake
+Sizes,Small, Medium, Large
+Prices,4.50, 6.50, 8.50
