@@ -1,0 +1,4 @@
+FLAVORS: Vanilla, Chocolate, Twist, Cake Batter, Marshmallow, Matcha
+TOPPINGS: Oreos, Chocolate chips, Caramel Turtles, Sprinkles, Cotton Candy Pop-Candies, Gummy Bears, Strawberries, Cheesecake, M & M Candies, None
+SAUCES: Caramel, Chocolate, Strawberry, Marshmallow, Hardening Chocolate, None
+PRICES: 1.50
